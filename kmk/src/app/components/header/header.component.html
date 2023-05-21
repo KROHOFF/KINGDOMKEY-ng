@@ -1,0 +1,27 @@
+<header class="">
+  <div class="nav-secondary">
+      <div class="auth">
+          <ul>
+              <li><a href="login.html">Iniciar Sesion</a></li>
+              <li><a href="login.html">Registrarse</a></li>
+          </ul>
+      </div>
+      <app-rrss></app-rrss>
+  </div>
+  <div class="nav-primary ">
+      <div class="logo animate__animated  animate__pulse">
+        <a [routerLink]="['/']">
+          <img id="logo" src="/assets/images/logo.png" alt="Logo-principal" />
+        </a>
+
+      </div>
+      <nav class="nav-p">
+          <ul>
+              <li><a [routerLink]="['/']">Inicio</a></li>
+              <li><a [routerLink]="['/torneos']">Competiciones</a></li>
+              <li><a [routerLink]="['/jugadores']">Jugadores</a></li>
+              <li><a [routerLink]="['/jugador']">Perfil</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>

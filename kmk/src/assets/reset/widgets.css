@@ -1,0 +1,33 @@
+
+.sidebar {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.widgets {
+  padding: 1rem;
+}
+.widgets .widget {
+  width: 100%;
+}
+.widgets .widget .widget-top {
+  padding: 1rem;
+  max-height: 240px;
+}
+.widget-top h2 {
+  color: var(--f-primary);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: var(--font-2);
+  font-weight: 700;
+}
+
+.widgets .widget .widget-bottom {
+  width: unset;
+  padding: 1rem;
+}
+
+.matches {
+  width: 100%;
+}

@@ -1,0 +1,104 @@
+
+/* Profile */
+
+.profile{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+.profile .profile-top{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background-image: url("/assets/images/profile/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  image-rendering: optimizeQuality;
+  width: 100%;
+  margin: 0;
+
+
+}
+.profile-top .profile-img{
+  display: block;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 180px;
+  -webkit-border-radius: 180px;
+  -moz-border-radius: 180px;
+  -ms-border-radius: 180px;
+  -o-border-radius: 180px;
+  position: relative;
+  margin: 5rem auto;
+  text-align: center;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  z-index: 9999;
+}
+
+.profile-top .profile-img img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+.profile-top .profile-player{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  color: var(--text-primary);
+  padding: 1rem;
+  margin-top: -2rem ;
+}
+.profile-player .profile-data{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.profile-data h2{
+  text-align: center;
+  font-family: var(--font-2);
+  border-bottom: 1px solid var(--f-secondary);
+  margin: 1rem 0 0 0;
+  padding: 0 0 .5rem 0;
+}
+.profile-data h3{
+  text-align: center;
+  font-size: .9rem;
+  font-family: var(--font-1);
+  color: var(--f-primary);
+}
+.profile .profile-bottom{
+  display: flex;
+  flex-flow: column;
+}
+
+.profile-bottom .profile-nav{
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-nav ul{
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+  height: auto;
+  padding: 1.5rem 0;
+}
+.profile-nav ul li a{
+  padding: 0 2rem;
+  color: var(--f-primary);
+}
+
+.profile-nav ul li a:hover{
+  color: var(--f-tertiary);
+}
