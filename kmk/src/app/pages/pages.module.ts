@@ -7,6 +7,7 @@ import { TorneosComponent } from './torneos/torneos.component';
 import { JugadorComponent } from './jugador/jugador.component';
 import { JugadorInfoComponent } from './jugador-info/jugador-info.component';
 import { ComponentsModule } from "../components/components.module";
+import { TorneoInfoComponent } from './torneo-info/torneo-info.component';
 
 
 @NgModule({
@@ -16,13 +17,15 @@ import { ComponentsModule } from "../components/components.module";
         TorneosComponent,
         JugadorComponent,
         JugadorInfoComponent,
+        TorneoInfoComponent,
     ],
     exports: [
         InicioComponent,
         JugadoresComponent,
         TorneosComponent,
         JugadorComponent,
-        JugadorInfoComponent
+        JugadorInfoComponent,
+        TorneoInfoComponent
     ],
     imports: [
         CommonModule,

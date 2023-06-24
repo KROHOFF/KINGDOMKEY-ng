@@ -37,7 +37,7 @@ form {
 }
 
 body {
-  background-image: url("assets/images/bg-9.jpg");
+  background-image: url("assets/images/bg-10.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -315,16 +315,13 @@ form .error {
 .app {
   display: flex;
   flex-flow: row wrap;
-  width: 1450px;
-  max-width: 1450px;
   height: auto;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .content {
-  width: 60%;
-  border-radius: 5px;
+  width: 69%;
   height: auto;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -345,9 +342,7 @@ form .error {
 
 .btn {
   text-align: center;
-  padding: 0.2rem;
-  width: 100%;
-  max-width: 150px;
+  padding: 0.5rem 1rem;
   color: var(--text-primary);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -386,9 +381,214 @@ form .error {
 
 
 
+/* INICIO CARDS */
 
 
-/*  */
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  padding: 0.5rem;
+}
+
+.card .card-top {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  min-height: 3rem;
+  padding: 1rem 0;
+}
+.card-top::after {
+  display: block;
+  content: "";
+  width: 80%;
+  border-bottom: 1px solid var(--bg-line);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* .card-top h2 {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+} */
+
+
+.card-top h2 a {
+  color: var(--f-primary);
+}
+.card-top h2 a:hover {
+  color: var(--text-primary);
+}
+
+.card-top h3 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+
+
+.card-top a {
+  color: var(--f-primary);
+}
+.card-top a:hover {
+  color: var(--text-primary);
+}
+
+.card-bottom {
+  margin: 0 0 1rem 0;
+}
+.card-img {
+  width: 100%; /* Ancho fijo del contenedor */
+  height: 350px; /* Alto fijo del contenedor */
+  overflow: hidden; /* Oculta cualquier contenido que exceda los límites del contenedor */
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+}
+
+.card-img-full-h {
+  width: 100%; /* Ancho fijo del contenedor */
+  height: 800px; /* Alto fijo del contenedor */
+  overflow: hidden; /* Oculta cualquier contenido que exceda los límites del contenedor */
+}
+
+.card-img-full-h img {
+  width: 100%; /* Ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+
+}
+
+.card-img img {
+  width: 100%; /* Ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card-date {
+  background-color: var();
+  max-width: 40%;
+  padding: 0 1rem;
+  text-align: left;
+  width:100%;
+}
+
+.card-date p {
+  color: var(--f-secondary);
+  font-size: 0.7rem;
+}
+
+
+.card-detail {
+  display: flex;
+  flex-flow: column;
+  color: var(--text-primary);
+  text-align: justify;
+  width: 100%;
+}
+.card-detail .card-text {
+  padding: 1rem;
+}
+.card-text p {
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-detail .card-btn {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+
+
+/* FIN CARDS */
+
+/* INICIO NAVBAR HORIZONTAL */
+.nav-horizontal {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-horizontal nav ul {
+  display: flex;
+  flex-flow: row;
+}
+
+.nav-horizontal li {
+  padding: 1.7rem;
+}
+
+.nav-horizontal a {
+  color: var(--text-secondary);
+  font-family: var(--font-1);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-radius: 0.5em;
+  background-color: #f2f2f2;
+  padding: 0.2rem 1rem;
+  border: 1px solid #f2f2f2;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  box-shadow: 6px 6px 12px #e0e0e0, -6px -6px 12px #fff;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+.nav-horizontal a:hover {
+  box-shadow: -6px -6px 12px #e0e0e0, 6px 6px 12px #fff;
+  color: var(--f-secondary);
+}
+
+
+
+.nav-data {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.nav-data p {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-family: var(--font-2);
+  font-weight: 600;
+}
+
+/* FIN NAVBAR HORIZONTAL */
+
+/* INICIO  */
 
 .mt-20 {
   margin-top: 20rem;
@@ -425,7 +625,7 @@ form .error {
   width: 50%;
 }
 .w-4 {
-  width: 40%;
+  width: 33.32%;
 }
 .w-3 {
   width: 30%;
@@ -467,6 +667,36 @@ form .error {
 }
 .pr-5 {
   padding-right: 5rem;
+}
+.pl-1 {
+  padding-left: 1rem;
+}
+.pl-2 {
+  padding-left: 2rem;
+}
+.pl-3 {
+  padding-left: 3rem;
+}
+.pl-4 {
+  padding-left: 4rem;
+}
+.pl-5 {
+  padding-left: 5rem;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.pb-3 {
+  padding-bottom: 3rem;
+}
+.pb-4 {
+  padding-bottom: 4rem;
+}
+.pb-5 {
+  padding-bottom: 5rem;
 }
 
 .mr-1 {
@@ -541,13 +771,13 @@ form .error {
 }
 
 .bg-color-1 {
-  background-color: rgba(0, 0, 0, 0.707);
+  background-color: rgb(46 46 46 / 98%);
 }
 .bg-color-2 {
   background-color: rgba(23, 23, 23, 0.561);
 }
 .bg-color-3 {
-  background-color: rgba(126, 126, 126, 0.425);
+  background-color: rgb(27 27 27 / 84%);
 }
 .bg-color-4 {
   background-color: rgba(238, 255, 52, 0.536);
@@ -556,7 +786,7 @@ form .error {
   background-color: rgba(0, 200, 255, 0.536);
 }
 .bg-color-white {
-  background-color: rgba(255, 255, 255, 0.878);
+  background-color: #f2f2f2;
 }
 .bg-color-black {
   background-color: rgba(0, 0, 0, 0.878);

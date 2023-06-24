@@ -17,10 +17,8 @@ header {
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
-  min-height: 3rem;
+  min-height: 6rem;
   width: 100%;
-  background: rgb(255,246,159);
-  background: radial-gradient(circle, rgba(255,246,159,0.15449929971988796) 1%, rgba(64,2,235,0.45702030812324934) 32%, rgba(0,9,255,0.2945553221288515) 81%, rgba(0,37,135,0.4962359943977591) 100%);
 }
 
 .nav-primary .nav-p ul {
