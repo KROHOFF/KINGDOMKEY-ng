@@ -5,13 +5,15 @@ import { JugadoresComponent } from './pages/jugadores/jugadores.component';
 import { JugadorComponent } from './pages/jugador/jugador.component';
 import { TorneosComponent } from './pages/torneos/torneos.component';
 import { JugadorInfoComponent } from './pages/jugador-info/jugador-info.component';
+import { TorneoInfoComponent } from './pages/torneo-info/torneo-info.component';
 
 const routes: Routes = [
   { path : '', component : InicioComponent },
   { path : 'jugadores', component : JugadoresComponent },
   { path : 'jugador', component : JugadorComponent },
   { path : 'jugador-info', component : JugadorInfoComponent },
-  { path : 'torneos', component : TorneosComponent },
+  { path : 'torneos', component: TorneosComponent },
+  { path : 'torneo-info', component: TorneoInfoComponent },
   { path : '**', redirectTo : '', pathMatch : 'full' }
 ];
 
